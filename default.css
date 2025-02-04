@@ -1,0 +1,367 @@
+body {
+	color: #333333;
+	font-family: 'Candara', Arial, Helvetica;
+}
+
+.wrap-content {
+	/* margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row; */
+	background: #ececec;
+}
+
+.bglf {
+	background: #111111;
+}
+
+.left-panel {
+	position: relative;
+	height: 100%;
+	/* flex: 2; */
+	/* width: 400px; */
+}
+
+.inside-abs::before {
+	content: "";
+	min-width: 296px;
+	margin: 0 auto;
+	display: block;
+}
+
+.inside-abs {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: #111111;
+}
+
+.profile-img img {
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.profile-img h3 {
+	color: #babaff;
+	text-align: center;
+	margin: 16px 0 5px;
+}
+
+.profile-img h4 {
+	color: #a9a9a9;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.left-mid ul {
+	width: 100%;
+	margin-top: 10px;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+}
+
+.left-mid ul li,
+.leftpanel-bottom ul li {
+	text-align: center;
+}
+
+.left-mid ul li a,
+.leftpanel-bottom ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.left-mid ul li a:hover {
+	color: #babaff;
+	outline: none;
+}
+
+.lg-hover {
+	width: 70px;
+	height: 74px;
+	background: url("images/mylogo.png") no-repeat;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lg-hover:hover {
+	background: url("images/logo-hover.png") no-repeat;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.leftpanel-bottom {
+	border-top: 1px dashed #8d8d8d;
+	margin-top: 30px;
+}
+
+.leftpanel-bottom ul {
+	padding: 20px 0;
+	list-style: none;
+	text-align: center;
+}
+
+.leftpanel-bottom ul li {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 18px;
+}
+
+.leftpanel-bottom ul li a:hover {
+	color: #babaff;
+}
+
+.fb-icon {
+	width: 15px;
+	height: 26px;
+	background: url("images/fb-icon.png") no-repeat;
+}
+
+.fb-icon:hover {
+	background: url("images/fb-icon-hover.png") no-repeat;
+	cursor: pointer;
+}
+
+.linkedin-icon {
+	width: 24px;
+	height: 23px;
+	background: url("images/linkedin-icon.png") no-repeat;
+}
+
+.linkedin-icon:hover {
+	background: url("images/linkedin-icon-hover.png") no-repeat;
+	cursor: pointer;
+}
+
+.mail-icon {
+	width: 20px;
+	height: 16px;
+	background: url("images/mail-icon.png") no-repeat;
+}
+
+.mail-icon:hover {
+	background: url("images/mail-icon-hover.png") no-repeat;
+	cursor: pointer;
+}
+
+.r-main {
+	background: #ececec;
+}
+
+.right-panel {
+	flex: 5;
+	height: 100%;
+
+	padding-left: 300px;
+}
+
+.ful-width {
+	width: 100%;
+}
+
+.w-img {
+	width: 30%;
+}
+
+.imgportfolio {
+	display: block;
+	margin-top: 22%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20%;
+}
+
+.dividedbox {
+	padding: 28px 0;
+	border-top: 1px dashed #999999;
+}
+
+.dividedbox h2 {
+	color: #111111;
+	font-weight: bold;
+}
+
+.l-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wd-box>div {
+	background-color: #f1f1f1;
+	/* width: 30%; */
+	min-height: 80px;
+	max-height: 100px;
+	margin: 12px;
+	box-shadow: 0px 0px 4px #999999;
+	overflow: hidden;
+}
+
+.wd-box>div img,
+.l-box>div img {
+	width: 100%;
+}
+
+.l-box>div {
+	width: 30%;
+	height: 100px;
+	margin: 10px;
+	box-shadow: 0px 0px 4px #999999;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+.tz-gallery {
+	padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row>div {
+	padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+	width: 100%;
+	border-radius: 0;
+	position: relative;
+}
+
+.tz-gallery .lightbox:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	opacity: 0;
+	color: #fff;
+	font-size: 26px;
+	font-family: 'Glyphicons Halflings';
+	content: '\e003';
+	pointer-events: none;
+	z-index: 9000;
+	transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: rgba(46, 132, 206, 0.7);
+	content: '';
+	transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+	opacity: 1;
+}
+
+.baguetteBox-button {
+	background-color: transparent !important;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 50px;
+  }
+
+#myBtn:hover {
+	background-color: #555;
+  }
+
+@media(max-width: 768px) {
+	body {
+		padding: 0;
+	}
+
+	.inside-abs {
+		/* padding: 0 20px; */
+		width: 100%;
+		border: 1px solid black;
+		position: relative;
+	}
+
+	.npad {
+		padding: 0!important;
+	}
+}
+
+@media screen and (max-width: 860px) {
+
+
+	.wrap-content {
+		flex-direction: column;
+	}
+
+	.profile-img {
+		display: none;
+	}
+
+	.left-mid ul {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.left-mid ul li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	.left-mid span {
+		color: #fff;
+	}
+
+	.left-mid button {
+		margin: 20px auto;
+		display: block;
+	}
+
+	.left-mid span i {
+		font-size: 20px;
+	}
+
+	.navbar-toggler-icon {
+		width: auto!important;
+		height: auto!important;
+	}
+
+	.inside-abs {
+		padding: 0 20px;
+		width: 100%;
+		position: relative;
+	}
+
+	.npad {
+		padding: 0!important;
+	}
+
+	.dividedbox {
+		text-align: center;
+	}
+
+	.wd-box, .l-box {
+		justify-content: center;
+	}
+}
